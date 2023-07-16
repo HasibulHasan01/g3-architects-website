@@ -1,0 +1,162 @@
+/* work sans google font */
+/* shared styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+}
+
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+
+/* header styles */
+.main-header{
+    background-color:rgba(255, 144, 14, 0.10);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.nav-title{
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 50px 220px;
+}
+
+.nav-anchors{
+    display: flex;
+}
+
+.nav-anchors li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.nav-anchors a{
+    text-decoration: none;
+    color: #424242;
+}
+
+.header-text{
+    width: 40%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+.ex-btn{
+    margin: 50px;
+}
+
+.header-img{
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.header-img img{
+    width: 70%;
+}
+
+
+/* feature area styles */
+.images-grid{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-area-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 100px auto 0 auto;
+}
+
+
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+.feature-content{
+    width: 45%;
+    padding: 70px;
+}
+
+.feature-h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.ql{
+    color: #727272;
+}
+
+.of{
+    color: #131313;
+}
+
+.fe{
+    color: #FF900E;
+}
+
+.feature-btn{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    *{
+        margin: 0px;
+    }
+    .navbar{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .nav-title{
+        /* margin: 10px 0px 25px 30px; */
+        font-size: 2rem;
+    }
+    .btn-primary{
+        margin: 20px 0px;
+    }
+    .header-img img{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .main-header{
+        padding: 50px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+}
