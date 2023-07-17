@@ -120,7 +120,53 @@
     margin-top: 30px;
 }
 
+.var-feature-area-container{
+    width: 80%;
+    margin: 100px auto 100px auto;
+    display: flex;
+}
 
+
+.var-feature-title{
+    font-size: 45px;
+    border-left: 10px solid orangered;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.features-container-small{
+    margin: 30px;
+    padding: 30px;
+}
+
+.each-feature{
+    margin: 30px;
+}
+
+.var-feature-img img{
+    width: 90%;
+    margin-left: 3rem;
+}
+
+.ten-badge{
+    background-color: orangered;
+    color: white;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    bottom: 4rem;
+
+}
+
+.ten-badge h2{
+    font-size: 45px;
+}
+
+.ten-badge p{
+    font-size: 22px;
+}
 
 
 
@@ -150,6 +196,16 @@
     .header-img img{
         width: 90%;
     }
+    .feature-area-container{
+        flex-direction: column;
+    }
+    .feature-img{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-content{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -158,5 +214,11 @@
     }
     .navbar{
         flex-direction: column;
+    }
+    .feature-area-container{
+        flex-direction: column;
+    }
+    .feature-content{
+        width: 100%;
     }
 }
