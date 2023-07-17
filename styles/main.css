@@ -168,6 +168,48 @@
     font-size: 22px;
 }
 
+/* Facts area styles */
+
+.facts-content{
+    margin: 0 0 100px 16%;
+}
+
+.facts-cards-container{
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.facts-card{
+    margin-right: 8%;
+    text-align: center;
+    padding: 25px;
+    border: 2px solid rgba(255, 128, 0, 0.279);
+    width: 105px;
+    height: 100px;
+}
+
+/* sponsors area styles */
+.sponsors-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsors-img{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+/* footer area styles */
+.footer{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+}
 
 
 
@@ -206,6 +248,45 @@
     .feature-content{
         width: 100%;
     }
+    .var-feature-area-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .each-feature{
+        margin: 20px 0 20px 0;
+    }
+    .var-feature-img{
+        text-align: center;
+    }
+    .var-feature-img img{
+        width: 90%;
+        margin-left: 0px;
+    }
+    .ten-badge{
+        padding: 0px;
+        position: static;
+    }
+    .facts-cards-container{
+        flex-direction: column;
+    }
+    .facts-card{
+        margin-bottom: 50px;
+    }
+    .sponsors-text{
+        margin: 0 auto 50px auto;
+    }
+    .sponsors-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsors-img img{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .footer{
+        text-align: center;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -220,5 +301,29 @@
     }
     .feature-content{
         width: 100%;
+    }
+    .var-feature-area-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .facts-cards-container{
+        flex-direction: column;
+    }
+    .facts-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .facts-card{
+        margin-left: 100px;
+    }
+    .sponsors-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsors-img img{
+        width: 30%;
+        margin-bottom: 50px;
     }
 }
